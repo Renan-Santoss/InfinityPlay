@@ -1,0 +1,9 @@
+:root{
+    --swiper-navigation-color: #00eeff;
+}
+
+
+.hero_img{
+    margin: 0 auto;
+    max-width: 1280px;
+}

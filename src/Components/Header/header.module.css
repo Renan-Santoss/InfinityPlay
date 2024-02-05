@@ -1,0 +1,186 @@
+.header {
+  height: 100px;
+  justify-content: space-between;
+  margin: 0 auto;
+  background: #131620;
+  padding: 20px;
+}
+
+.LogoButton {
+  background: transparent;
+  border: none;
+}
+
+.header_li {
+  color: #bcbcbc;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.header_li a:hover {
+  color: #05c7f2;
+  transition: 0.3s ease-in-out;
+}
+
+.header_wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding: 20px 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header_content {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ul_wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header_btn {
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.header_btn i {
+  margin-top: 20px;
+}
+
+.header_nav a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #003cff -1.43%, #00c3ff 99.9%);
+  transition: all 0.2s ease;
+}
+
+.header_nav a:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #003cff -1.43%, #59d8ff 99.9%);
+}
+
+.icon i {
+  transition: 0.2s;
+}
+
+.icon i:hover {
+  transform: scale(1.2);
+  text-shadow: 0px 0px 10px #00eeff;
+  color: #00eeff;
+}
+
+#buttonMobile {
+  display: none;
+}
+
+/* /Função Mobile 600px */
+
+@media (max-width: 470px) {
+  nav {
+    display: none;
+  }
+  #buttonMobile {
+    display: block;
+    background-color: transparent;
+    border: transparent;
+  }
+  #MenuIcons {
+    width: 20px;
+    height: 20px;
+  }
+  .active nav {
+    height: 90vh;
+    display: flex;
+    position: absolute;
+    top: 140px; /* ajuste conforme necessário */
+    left: 0;
+    width: 100%;
+    background-color: #2a2f43; /* cor de fundo do menu mobile */
+    z-index: 2;
+  }
+  .active .ul_wrapper {
+    padding: 30px;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .header_link {
+    font-size: 18px;
+  }
+  .icon a{
+    font-size: 20px;
+  }
+  .header_nav a{
+    font-size: 18px;
+  }
+  .active .nav_li {
+    text-align: center;
+  }
+  .header_btn {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* /Função Mobile 600px */
+
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  #buttonMobile {
+    display: block;
+    background-color: transparent;
+    border: transparent;
+  }
+  #MenuIcons {
+    width: 20px;
+    height: 20px;
+  }
+  .active nav {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px; /* ajuste conforme necessário */
+    left: 0;
+    width: 100%;
+    background-color: #2a2f43; /* cor de fundo do menu mobile */
+    z-index: 2;
+  }
+  .active .ul_wrapper {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .active .nav_li {
+    text-align: center;
+  }
+  .header_btn {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

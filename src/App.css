@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  body{  
+    background: #181B26;
+    font-family: 'poppins', Arial;
+    box-sizing: border-box;
+  }
+  
+  a{
+    text-decoration: none; 
+    color: #fff;
+  }
+  
+  ul, li{
+    list-style: none;
+  }
+  
+  img{
+    display: block;
+    max-width: 100%;
+  }
